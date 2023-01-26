@@ -4,12 +4,130 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(36, 36, 36);
+
+}
+li{
+    list-style: none;
 }
 .top{
+    background-color: white;
     position: fixed;
+    font-family: 'Baskervville', serif;
+
+
 }
 .navbar{
+    min-height: 70px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header{
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15px;
+    background-color: black;
+    width: 90%;
+    z-index: 1;
+    border-top-left-radius: 5px;
+}
+.rubrik{
+    font-size: 40px;
+    margin-left: 10px;
+    padding: 3px;
+    background-color: rgb(41, 41, 41);
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 4px;
+}  
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.rubrik:hover{
+    background-color: rgb(38, 27, 27);
+
+}
+.nav-link{
+    transition: 0.3s ease;
+}
+.nav-item{
+
+}
+.nav-link:hover{
+    color: #D4AF37;
+}
+.dropbtn{
+    background-color: rgb(41, 41, 41);
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 22px;
+    padding-right: 40px;
+    position: center;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.dropbtn:hover{
+    background-color: rgb(38, 27, 27);
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    max-width: 124px;
+    min-width: 124px;
+    z-index: 1;
+    background-color: rgb(41, 41, 41);
+    margin-right: 35px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.dropdown-content a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.dropdown-content a:hover{
+    transition: ease-out;
+    background-color: rgb(38, 27, 27);
+
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+
+}
+.main-content{
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    padding-top: 100px;
+    font-size: 50px;
+}
+footer{
+    background-color: black;
+    font-size: 20px;
+
+    text-decoration: underline;
+}
+.footer-link{
 
 }
