@@ -76,7 +76,7 @@ a{
     text-decoration: none;
     border: none;
     padding: 22px;
-    padding-right: 40px;
+
     position: center;
     font-size: 35px;
     font-family: 'Times New Roman', Times, serif;
@@ -123,19 +123,32 @@ a{
     margin-left: 7.5%;
     margin-right: 7.5%;
     padding-top: 100px;
-    background-image: url(slideshowbilder/teghamburgare.jpg), url(slideshowbilder/köttmajs.jpg), url(slideshowbilder/tegmat1.jpg), url(slideshowbilder/tegmat2.jpg);
-    background-position: top, center, center, bottom;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-image: url(img/Bakgrund.jpg);
+    background-repeat: repeat;
     background-size: 100%;
 }
 .main-content-hem{
     margin-left: 7.5%;
     margin-right: 7.5%;
     padding-top: 100px;
-    background-image: url(slideshowbilder/teghamburgare.jpg), url(slideshowbilder/köttmajs.jpg), url(slideshowbilder/tegmat1.jpg), url(slideshowbilder/tegmat2.jpg);
-    background-position: top, center, center, bottom;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-image: url(img/Bakgrund.jpg);
+    background-repeat: repeat;
     background-size: 100%;
+}
+.main-content-hem{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2;
+   
+}
+.main-content-om{
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    padding-top: 100px;
+    background-image: url(img/Bakgrund.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    justify-content: center;
 }
 footer{
 
@@ -156,6 +169,7 @@ footer{
 }
 .slideshow{
     max-width: 100%;
+    padding: 2.5%;
 }
 .slideshow-info{
     padding: 5px;
@@ -182,6 +196,12 @@ footer{
 .adress-grid{
 
 }
+#map{
+    width: 80%;
+    height: 400px;
+    grid-column: 1;
+    grid-row: 2;
+}
 .innehåll-content{
     grid-column: 2/-1;
     grid-row: 1;
@@ -207,4 +227,33 @@ footer{
 }
 .adress:hover{
     text-decoration: underline;
+}
+.bistrobild{
+    width: 96%;
+    margin: 2%;
+    margin-bottom: 0;
+ 
+}
+.bistroteam{
+    grid-column: 1;
+    grid-row: 1;
+}
+.bistroinfo{
+    text-align: center;
+
+    margin-left: 2%;
+    margin-right: 2%;
+
+    color: white;
+    font-size: 20px;
+    background-color: #800000;
+}
+.maps{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+     margin-bottom: 5%;
+}
+.tobias{
+    width: 40%;
 }
